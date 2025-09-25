@@ -1,4 +1,15 @@
 this is the version 1 of my project.
 i want this to go into commit 2.
 
+
 this is a new change now. new branch
+
+this is a new change now.
+
+
+(gonna merge this develop branch to the main lets see how its gonna get merge and then push it into the git repository).
+
+branching done
+merging done kinda
+i still need to learn more and more concepts of the git. its so fun working on terminal 
+

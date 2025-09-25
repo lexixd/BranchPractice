@@ -1,0 +1,75 @@
+GIT COMMANDS FROM START TO FINISH (the ones i know)
+
+* git status = very important
+* git init = converts/makes a folder into a repository
+* git status = check the status of a repository
+* git add --a/ . = put all the filed in staging area
+* git add <filename . txt> = single file in staging area 
+
+* git commit -m "initial commit" = commits all the files in staging area with a message
+* git commit -a -m "direct commit" =skips staging area and commits all the tracked files
+* git commit --amend = modify the most recent commit on the current branch (opens the vim editor)
+
+* git log = tells the last or all commits
+* git log -p = shows all the logs with deleted stuff too
+* git log -p -2/-3 = shows the last 2/3 commits only
+* git log --stat = short summary of commits
+* git log --since=2.days/2.months/2.years = shows log from specific time
+* git log --pretty=oneline = shows the summary
+* git log --pretty=format:"%h--%an/%ae" = (h = hashes, a n= author name, ae = author email)
+* git log --pretty=short/full = short logs/full logs (author=the one who made the file originally, commit= the one who make changes
+
+* rm -rf .git = deletes all files in repo
+* git rm --cached <filename> = untrack the file
+* git rm <filename> = deletes the mentioned file
+
+* .gitignore  an important file which helps us ignore files in the staging area if we write them in it
+* git diff = compare working directory with staging area
+* git diff --staged = compare your last commit to your current staging area
+* git mv first.txt first=rename.txt = renames the file name
+* git config --global alias.st status = add alias to change/custom command names (status=st, git st) 
+
+* git checkout --<filename> = unstage the file, goes back to the last commit made
+* git checkout -f = goes back to the last commit with all the files
+* git restore <filename> = unmodify
+
+* git remote (just to check the remote connection
+* git remote add origin <repo url> (from git prolly, also origin is just a name)
+* git remote -v = gives you 2 options- one for pull and one for push
+
+
+##############  SSH KEY GENERATING (SECURE SHELL HASH)  #####################
+
+* ssh-keygen-t ed25519 -c "manpreetscsdsv@gmail.com" -enter-enter  (ed25519 ill prolly get in git)
+* ls -al ~/.shh = to check if we already have an ssh key 
+* eval "$(ssh-agent-s)"
+* ssh-add ~/.ssh/id_ed25519
+* ssh-add ~/.ssh/id_ed25519.pub
+
+
+SSH KEY PAIR = a public and private key for secure access
+SSH-KEYGEN = generates a new SSH key pair
+SSH-ADD = add your private key to the ssh agent
+SSH-T git@github.com = test ssh connection
+SSH-ADD-l = list loaded ssh keys
+SSH-add-d = removes a key from agent
+
+######### copy and paste the key into git to make an secure connection. ##########
+
+* git push -u origin master = pushes the code into the git repo
+
+
+############################## BRANCHES ####################################
+
+* git checkout -b develop = creating a new branch called "develop" and then switching into it
+* git checkout master = move/switch back to master branch
+* git checkout develop = move switch back to the branch called develop
+* git merge <branch name> = merges the branch with the master branch
+* git branch -v = commit hash commit merge
+* git branch --merged = shows already merged branches
+* git branch --no-merged = shows the branches which are not merged
+
+* git branch -d develop = gives error if branch is not merged
+* git branch -D develop = gives no error, straight up deletes
+ 
+
