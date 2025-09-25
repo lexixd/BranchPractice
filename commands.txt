@@ -17,7 +17,7 @@ GIT COMMANDS FROM START TO FINISH (the ones i know)
 * git log --since=2.days/2.months/2.years = shows log from specific time
 * git log --pretty=oneline = shows the summary
 * git log --pretty=format:"%h--%an/%ae" = (h = hashes, a n= author name, ae = author email)
-* git log --pretty=short/full = short logs/full logs (author=the one who made the file originally, commit= the one who make changes
+* git log --pretty=short/full = short logs/full logs (author=the one who made the file originally, commit= the one who make changes)
 
 * rm -rf .git = deletes all files in repo
 * git rm --cached <filename> = untrack the file
@@ -33,7 +33,7 @@ GIT COMMANDS FROM START TO FINISH (the ones i know)
 * git checkout -f = goes back to the last commit with all the files
 * git restore <filename> = unmodify
 
-* git remote (just to check the remote connection
+* git remote (just to check the remote connection)
 * git remote add origin <repo url> (from git prolly, also origin is just a name)
 * git remote -v = gives you 2 options- one for pull and one for push
 
